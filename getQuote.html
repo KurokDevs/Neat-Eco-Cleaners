@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Get a Quote - Neat & Eco Cleaners</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Neat & Eco Logo" class="logo">
+            <h1>Neat & Eco Cleaners</h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="getQuote.html" class="btn"><button>Get a Quote</button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-text">
+            <h1>Get a Free Quote</h1>
+            <p>Fill out the form below to get a free estimate for our services.</p>
+            
+            <form class="quote-form" action="https://formsubmit.co/eduardoroasanchez17@gmail.com" method="POST">
+                <!-- Reemplaza TU_CORREO@AQUI.com con tu dirección de correo electrónico real -->
+                
+                <!-- Campos ocultos para configurar FormSubmit -->
+                <input type="hidden" name="_subject" value="Neat & Eco Cleaners: New Quote Request">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="thanks.html">
+                <!-- Si no tienes dominio, usa la ruta relativa: _next=thanks.html -->
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service">
+                        <option value="residential">Residential Cleaning</option>
+                        <option value="commercial">Commercial Cleaning</option>
+                        <option value="deep">Deep Cleaning</option>
+                        <option value="movein">Move In/Out Cleaning</option>
+                        <option value="construction">Post-Construction Cleanup</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="content-image">
+            <img src="quote-image.jpg" alt="Get a Quote">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Neat & Eco Cleaners. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
