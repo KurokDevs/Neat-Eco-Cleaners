@@ -33,8 +33,7 @@
             <h1>Get a Free Quote</h1>
             <p>Fill out the form below to get a free estimate for our services.</p>
             
-            <form class="quote-form" name="quote-request" method="POST" netlify>
-                <!-- Añade este campo para Netlify -->
+            <form class="quote-form" name="quote-request" method="POST" data-netlify="true" data-netlify-success-url="/thanks.html">
                 <input type="hidden" name="form-name" value="quote-request">
                 
                 <div class="form-group">
