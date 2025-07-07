@@ -33,14 +33,9 @@
             <h1>Get a Free Quote</h1>
             <p>Fill out the form below to get a free estimate for our services.</p>
             
-            <form class="quote-form" action="https://formsubmit.co/eduardoroasanchez17@gmail.com" method="POST">
-                <!-- Reemplaza TU_CORREO@AQUI.com con tu dirección de correo electrónico real -->
-                
-                <!-- Campos ocultos para configurar FormSubmit -->
-                <input type="hidden" name="_subject" value="Neat & Eco Cleaners: New Quote Request">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="thanks.html">
-                <!-- Si no tienes dominio, usa la ruta relativa: _next=thanks.html -->
+            <form class="quote-form" name="quote-request" method="POST" netlify>
+                <!-- Añade este campo para Netlify -->
+                <input type="hidden" name="form-name" value="quote-request">
                 
                 <div class="form-group">
                     <label for="name">Name</label>
